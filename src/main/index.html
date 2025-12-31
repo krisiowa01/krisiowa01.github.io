@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KageWolff Foto</title>
+    <title>KageWolffoto</title>
     <style>
         * {
             margin: 0;
@@ -112,7 +112,7 @@
 
     <div class="container">
         <header>
-            <h1>KageWolff Foto</h1>
+            <h1>KageWolffoto</h1>
             <p class="subtitle">Photography Portfolio</p>
         </header>
         
@@ -121,19 +121,6 @@
     </div>
 
     <script>
-        // Sample image data - replace with your actual images
-        const imageData = [
-            { src: 'https://via.placeholder.com/400?text=Photo+1', alt: 'Photo 1' },
-            { src: 'https://via.placeholder.com/400?text=Photo+2', alt: 'Photo 2' },
-            { src: 'https://via.placeholder.com/400?text=Photo+3', alt: 'Photo 3' },
-            { src: 'https://via.placeholder.com/400?text=Photo+4', alt: 'Photo 4' },
-            { src: 'https://via.placeholder.com/400?text=Photo+5', alt: 'Photo 5' },
-            { src: 'https://via.placeholder.com/400?text=Photo+6', alt: 'Photo 6' },
-            { src: 'https://via.placeholder.com/400?text=Photo+7', alt: 'Photo 7' },
-            { src: 'https://via.placeholder.com/400?text=Photo+8', alt: 'Photo 8' },
-            { src: 'https://via.placeholder.com/400?text=Photo+9', alt: 'Photo 9' },
-        ];
-
         document.addEventListener("DOMContentLoaded", function() {
             const gallery = document.getElementById("gallery");
             const loading = document.getElementById("loading");
@@ -142,12 +129,12 @@
             imageData.forEach((image, index) => {
                 const item = document.createElement("div");
                 item.className = "gallery-item";
-                item.innerHTML = `
-                    <img src="${image.src}" alt="${image.alt}" loading="lazy">
-                    <div class="overlay">
-                        <div class="overlay-text">${image.alt}</div>
-                    </div>
-                `;
+                // item.innerHTML = `
+                //     <img src="${image.src}" alt="${image.alt}" loading="lazy">
+                //     <div class="overlay">
+                //         <div class="overlay-text">${image.alt}</div>
+                //     </div>
+                // `;
                 gallery.appendChild(item);
             });
             
