@@ -2,7 +2,6 @@ function showCustomGreeting() {
     const modal = document.getElementById("welcomeModal");
     const input = document.getElementById("userNameInput");
     const button = document.getElementById("submitName");
-    
 
     modal.classList.add("show");
 
@@ -18,15 +17,20 @@ function showCustomGreeting() {
         modal.classList.remove("show");
 
         localStorage.setItem("hasGreeted", "true");
+        localStorage.setItem("userName", name);
     });
 }
 
-if (!localStorage.getItem("hasGreeted")) {
-    document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
+    const hasGreeted = localStorage.getItem("hasGreeted");
+    const savedName = localStorage.getItem("userName");
+
+    if (!hasGreeted) {
         showCustomGreeting();
-    });
-}
-
+    } else if (savedName) {
+        console.log(`Welcome back, ${savedName}!`);
+    }
+});
 
 const font = "'Great Vibes', cursive";
 

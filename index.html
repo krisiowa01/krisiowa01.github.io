@@ -3,166 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KageWolffoto</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Great Vibes', cursive;
-            background-color: #0a0a0a;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-            font-weight: 400;
-        }
-
-        .subtitle {
-            color: #aaa;
-            font-size: 1rem;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            aspect-ratio: 1;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .gallery-item .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover .overlay {
-            opacity: 1;
-        }
-
-        .overlay-text {
-            color: #fff;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #aaa;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            }
-        }
-
-         .modal {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: 0.3s ease;
-        }
-
-        .modal.show {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .modal-content {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            color: black;
-        }
-    </style>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div id="welcomeModal" class="modal">
+    <div id="welcomeModal">
         <div class="modal-content">
             <h2>Welcome!</h2>
             <p>Please enter your name:</p>
-            <input type="text" id="userNameInput">
-            <button id="submitName">Continue</button>
+            <input type="text" id="userNameInput" placeholder="Your name">
+            <button id="submitName">Submit</button>
         </div>
     </div>
 
-    <div class="container">
-        <header>
-            <h1>KageWolffoto</h1>
-            <p class="subtitle">Photography Portfolio</p>
-        </header>
+    <div id="loading">Loading images...</div>
 
-        <div id="gallery" class="gallery"></div>
-        <div id="loading" class="loading">Loading gallery...</div>
-    </div>
+    <div id="gallery"></div>
 
-    <script src="script.js" defer></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
