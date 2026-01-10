@@ -1,41 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const hasGreeted = localStorage.getItem("hasGreeted");
-    const savedName = localStorage.getItem("userName");
-
-    if (!hasGreeted) {
-        showCustomGreeting();
-    } else if (savedName) {
-        console.log(`Welcome back, ${savedName}!`);
-    }
-
-    loadGallery();
-});
-
-function showCustomGreeting() {
-    const modal = document.getElementById("welcomeModal");
-    const input = document.getElementById("userNameInput");
-    const button = document.getElementById("submitName");
-
-    modal.classList.add("show");
-
-    // Prevent duplicate listeners
-    button.onclick = () => {
-        const name = input.value.trim();
-
-        if (!name) {
-            alert("Please enter your name.");
-            return;
-        }
-
-        alert(`Hello, ${name}! Welcome to our website.`);
-
-        modal.classList.remove("show");
-
-        localStorage.setItem("hasGreeted", "true");
-        localStorage.setItem("userName", name);
-    };
-}
-
 function loadGallery() {
     const imageData = [
         { src: 'images/DSC03517.jpg', alt: '"In God We Trust" on my way to Valley of Fire.'},
@@ -66,6 +28,4 @@ function loadGallery() {
     });
 
     loading.style.display = "none";
-
-    console.log("Gallery loaded with " + imageData.length + " images");
 }
