@@ -3,15 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>KageWolffoto.com</title>
 </head>
-
 <body>
-    <div class="loading">Loading images...</div>
-
-    <div class="gallery"></div>
-
-    <script src="script.js"></script>
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Photography Portfolio</h1>
+    </div>
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03517.jpg"
+                onclick="openModal(
+'/images/DSC03517.jpg')"
+                alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03519.jpg"
+                onclick="openModal(
+'/images/DSC03519.jpg')"
+                alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03521.jpg"
+                onclick="openModal(
+'/images/DSC03521.jpg')"
+                alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03534.jpg"
+                onclick="openModal(
+'/images/DSC03534.jpg')"
+                alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03536.jpg"
+                onclick="openModal(
+'/images/DSC03536.jpg')"
+                alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03544.jpg"
+                onclick="openModal(
+'/images/DSC03544.jpg')"
+                alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03545.jpg"
+                onclick="openModal(
+'/images/DSC03545.jpg')"
+                alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"/images/DSC03563.jpg"
+                onclick="openModal(
+'/images/DSC03563.jpg')"
+                alt="Image 8">
+        </div>
+    </div>
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
