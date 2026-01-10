@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+    loadGallery();});
+    
 function loadGallery() {
     const imageData = [
         { src: 'images/DSC03517.jpg', alt: '"In God We Trust" on my way to Valley of Fire.'},
