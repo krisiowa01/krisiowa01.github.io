@@ -2,6 +2,7 @@ function showCustomGreeting() {
     const modal = document.getElementById("welcomeModal");
     const input = document.getElementById("userNameInput");
     const button = document.getElementById("submitName");
+    
 
     modal.classList.add("show");
 
