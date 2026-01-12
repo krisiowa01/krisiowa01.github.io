@@ -1,3 +1,4 @@
+document.body.style.backgroundColor = "black";
 function openModal(imageSrc) {
     let modal = document.getElementById("myModal");
     let modalImg = document.getElementById("modalImage");
