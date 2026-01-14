@@ -156,6 +156,35 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+/* Album Modal */
+#albumModal .album-modal-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#albumModal img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#albumModal img:hover {
+    transform: scale(1.03);
+}
+
+#albumModal h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+
+
 
 /* --------------------------------------------------
    Responsive Design

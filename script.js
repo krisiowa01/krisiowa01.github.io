@@ -1,6 +1,8 @@
 document.body.style.backgroundColor = "black";
 
-/* Modal */
+/* --------------------------------------------------
+   Image Modal (single image view)
+-------------------------------------------------- */
 function openModal(imageSrc) {
     const modal = document.getElementById("myModal");
     const modalImg = document.getElementById("modalImage");
@@ -12,7 +14,10 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
-/* Journal Section */
+
+/* --------------------------------------------------
+   Journal Section (auto‑added under each image)
+-------------------------------------------------- */
 function addJournalSectionBelowImage(imgElement) {
     if (imgElement.nextElementSibling?.classList.contains("journal-section")) return;
 
@@ -38,20 +43,40 @@ document.querySelectorAll(".journal-image").forEach(img => {
     addJournalSectionBelowImage(img);
 });
 
-/* Album switching */
+
+/* --------------------------------------------------
+   Album Modal (shows all images inside an album)
+-------------------------------------------------- */
+function openAlbumModal(galleryId) {
+    const modal = document.getElementById("albumModal");
+    const content = document.getElementById("albumModalContent");
+
+    // Clear previous content
+    content.innerHTML = "";
+
+    // Pull all images from the selected gallery
+    const images = document.querySelectorAll(`#${galleryId} .journal-image`);
+
+    images.forEach(img => {
+        const clone = img.cloneNode(true);
+        clone.onclick = () => openModal(clone.src); // open single-image modal
+        content.appendChild(clone);
+    });
+
+    modal.style.display = "block";
+}
+
+function closeAlbumModal() {
+    document.getElementById("albumModal").style.display = "none";
+}
+
+
+/* --------------------------------------------------
+   Album Click Handler (open album modal)
+-------------------------------------------------- */
 document.querySelectorAll(".album").forEach(album => {
     album.addEventListener("click", () => {
         const target = album.getAttribute("data-target");
-
-        // Hide all galleries
-        document.querySelectorAll(".gallery").forEach(g => g.style.display = "none");
-
-        // Show selected gallery
-        document.getElementById(target).style.display = "grid";
-
-        // Scroll to gallery
-        window.scrollTo({ top: album.offsetTop, behavior: "smooth" });
+        openAlbumModal(target);
     });
 });
-
-document.querySelectorAll(".album").forEach(album => { album.addEventListener("click", () => { const target = album.getAttribute("data-target"); document.querySelectorAll(".gallery").forEach(g => g.style.display = "none"); document.getElementById(target).style.display = "grid"; }); });
