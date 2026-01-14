@@ -17,27 +17,27 @@
     <div class="albums">
 
         <div class="album" data-target="travelGallery">
-            <img src="/images/DSC03517.jpg" class="album-cover">
+            <img src="/images/travel/DSC03679.jpg" class="album-cover">
             <h2>Travel</h2>
         </div>
 
         <div class="album" data-target="portraitsGallery">
-            <img src="/images/DSC03519.jpg" class="album-cover">
+            <img src="/images/portraits/DSC03432.jpg" class="album-cover">
             <h2>Portraits</h2>
         </div>
 
         <div class="album" data-target="natureGallery">
-            <img src="/images/DSC03581.jpg" class="album-cover">
+            <img src="/images/nature/IMG_1183.jpg" class="album-cover">
             <h2>Nature</h2>
         </div>
 
         <div class="album" data-target="nevadaGallery">
-            <img src="/images/DSC03534.jpg" class="album-cover">
+            <img src="/images/nevada/DSC03517.jpg" class="album-cover">
             <h2>Nevada</h2>
         </div>
 
         <div class="album" data-target="iowaGallery">
-            <img src="/images/DSC03536.jpg" class="album-cover">
+            <img src="/images/iowa/DSC03296.jpg" class="album-cover">
             <h2>Iowa</h2>
         </div>
 
@@ -45,28 +45,56 @@
 
     <div id="travelGallery" class="gallery">
         <div class="gallery-item">
+            <img class="journal-image" src="/images/travel/DSC03679.jpg" onclick="openModal('/images/travel/DSC03679.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/travel/IMG_7348.jpg" onclick="openModal('/images/travel/IMG_7348.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/travel/laundry.jpg" onclick="openModal('/images/travel/laundry.jpg')">
+        </div>
+        <div class="gallery-item">
             <img class="journal-image" src="/images/DSC03517.jpg" onclick="openModal('/images/DSC03517.jpg')">
         </div>
+    
         <!-- Add more travel images here -->
     </div>
 
     <div id="portraitsGallery" class="gallery">
         <div class="gallery-item">
-            <img class="journal-image" src="/images/DSC03519.jpg" onclick="openModal('/images/DSC03519.jpg')">
+            <img class="journal-image" src="/images/portraits/DSC03432.jpg" onclick="openModal('/images/portraits/DSC03432.jpg')">
         </div>
         <!-- Add more portrait images here -->
     </div>
 
     <div id="natureGallery" class="gallery">
         <div class="gallery-item">
-            <img class="journal-image" src="/images/DSC03581.jpg" onclick="openModal('/images/DSC03581.jpg')">
+            <img class="journal-image" src="/images/nature/IMG_1183.jpg" onclick="openModal('/images/nature/IMG_1183.jpg')">
         </div>
         <!-- Add more nature images here -->
     </div>
 
     <div id="nevadaGallery" class="gallery">
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/DSC03534.jpg" onclick="openModal('/images/DSC03534.jpg')">
+           <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03517.jpg" onclick="openModal('/images/nevada/DSC03517.jpg')">
+        </div>
+         <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03519.jpg" onclick="openModal('/images/nevada/DSC03519.jpg')">
+        </div>
+         <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03544.jpg" onclick="openModal('/images/nevada/DSC03544.jpg')">
+        </div>
+           <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03545.jpg" onclick="openModal('/images/nevada/DSC03545.jpg')">
+        </div>
+           <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03563.jpg" onclick="openModal('/images/nevada/DSC03563.jpg')">
+        </div>
+           <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03581.jpg" onclick="openModal('/images/nevada/DSC03581.jpg')">
+        </div>
+           <div class="gallery-item">
+            <img class="journal-image" src="/images/nevada/DSC03594-3.jpg" onclick="openModal('/images/nevada/DSC03594-3.jpg')">
         </div>
         <!-- Add more Nevada images here -->
     </div>
@@ -77,6 +105,11 @@
         </div>
         <!-- Add more Iowa images here -->
     </div>
+    <div id="albumModal" class="modal"> 
+        <span class="close" onclick="closeAlbumModal()">&times;</span>
+         <div class="album-modal-content" id="albumModalContent">
+         </div> 
+        </div>
 
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
