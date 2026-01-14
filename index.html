@@ -7,85 +7,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <title>KageWolffoto.com</title>
 </head>
+
 <body>
-    <!-- Heading Name -->
     <div class="banner">
         <h1>KageWolffoto</h1>
         <p>Capturing Moments, Creating Memories</p>
     </div>
-    <!-- Image Gallery section all images in one div -->
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03517.jpg"
-                onclick="openModal(
-'/images/DSC03517.jpg')"
-                alt="Image 1">
+
+    <div class="albums">
+
+        <div class="album" data-target="travelGallery">
+            <img src="/images/DSC03517.jpg" class="album-cover">
+            <h2>Travel</h2>
         </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03519.jpg"
-                onclick="openModal(
-'/images/DSC03519.jpg')"
-                alt="Image 2">
+
+        <div class="album" data-target="portraitsGallery">
+            <img src="/images/DSC03519.jpg" class="album-cover">
+            <h2>Portraits</h2>
         </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03581.jpg"
-                onclick="openModal(
-'/images/DSC03581.jpg')"
-                alt="Image 3">
+
+        <div class="album" data-target="natureGallery">
+            <img src="/images/DSC03581.jpg" class="album-cover">
+            <h2>Nature</h2>
         </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03534.jpg"
-                onclick="openModal(
-'/images/DSC03534.jpg')"
-                alt="Image 4">
+
+        <div class="album" data-target="nevadaGallery">
+            <img src="/images/DSC03534.jpg" class="album-cover">
+            <h2>Nevada</h2>
         </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03536.jpg"
-                onclick="openModal(
-'/images/DSC03536.jpg')"
-                alt="Image 5">
+
+        <div class="album" data-target="iowaGallery">
+            <img src="/images/DSC03536.jpg" class="album-cover">
+            <h2>Iowa</h2>
         </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03544.jpg"
-                onclick="openModal(
-'/images/DSC03544.jpg')"
-                alt="Image 6">
-        </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03545.jpg"
-                onclick="openModal(
-'/images/DSC03545.jpg')"
-                alt="Image 7">
-        </div>
-        <div class="gallery-item">
-            <img src=
-"/images/DSC03563.jpg"
-                onclick="openModal(
-'/images/DSC03563.jpg')"
-                alt="Image 8">
-        </div>
+
     </div>
-    <!-- Modal for Image Display -->
+
+    <div id="travelGallery" class="gallery">
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/DSC03517.jpg" onclick="openModal('/images/DSC03517.jpg')">
+        </div>
+        <!-- Add more travel images here -->
+    </div>
+
+    <div id="portraitsGallery" class="gallery">
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/DSC03519.jpg" onclick="openModal('/images/DSC03519.jpg')">
+        </div>
+        <!-- Add more portrait images here -->
+    </div>
+
+    <div id="natureGallery" class="gallery">
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/DSC03581.jpg" onclick="openModal('/images/DSC03581.jpg')">
+        </div>
+        <!-- Add more nature images here -->
+    </div>
+
+    <div id="nevadaGallery" class="gallery">
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/DSC03534.jpg" onclick="openModal('/images/DSC03534.jpg')">
+        </div>
+        <!-- Add more Nevada images here -->
+    </div>
+
+    <div id="iowaGallery" class="gallery">
+        <div class="gallery-item">
+            <img class="journal-image" src="/images/DSC03536.jpg" onclick="openModal('/images/DSC03536.jpg')">
+        </div>
+        <!-- Add more Iowa images here -->
+    </div>
+
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImage">
     </div>
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
