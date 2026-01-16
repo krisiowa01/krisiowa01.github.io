@@ -1,0 +1,80 @@
+{
+  "iowa": [
+    "images/iowa/DSC03296.jpg",
+    "images/iowa/DSC03305.jpg",
+    "images/iowa/DSC03306.jpg",
+    "images/iowa/DSC03310.jpg",
+    "images/iowa/DSC03311.jpg",
+    "images/iowa/DSC03319.jpg",
+    "images/iowa/DSC03320.jpg",
+    "images/iowa/DSC03321.jpg",
+    "images/iowa/DSC03323.jpg",
+    "images/iowa/DSC03325.jpg",
+    "images/iowa/DSC03326.jpg",
+    "images/iowa/DSC03328.jpg",
+    "images/iowa/DSC03329.jpg",
+    "images/iowa/DSC03337.jpg",
+    "images/iowa/DSC03341.jpg"
+  ],
+
+  "nature": [
+    "images/nature/DSC01165.jpg",
+    "images/nature/DSC01166.jpg",
+    "images/nature/DSC01167.jpg",
+    "images/nature/DSC01575.jpg",
+    "images/nature/DSC01588.jpg",
+    "images/nature/grand canyon 5.jpg",
+    "images/nature/grand canyon 6.jpg",
+    "images/nature/grand canyon 10.jpg",
+    "images/nature/IMG_1183.jpg",
+    "images/nature/sedona.jpg"
+  ],
+
+  "nevada": [
+    "images/nevada/DSC01686.jpg",
+    "images/nevada/DSC01691.jpg",
+    "images/nevada/DSC03517.jpg",
+    "images/nevada/DSC03519.jpg",
+    "images/nevada/DSC03534.jpg",
+    "images/nevada/DSC03536.jpg",
+    "images/nevada/DSC03539.jpg",
+    "images/nevada/DSC03544.jpg",
+    "images/nevada/DSC03545.jpg",
+    "images/nevada/DSC03563.jpg",
+    "images/nevada/DSC03581.jpg",
+    "images/nevada/DSC03594-3.jpg",
+    "images/nevada/DSC03673.jpg",
+    "images/nevada/DSC03675.jpg",
+    "images/nevada/DSC03677.jpg",
+    "images/nevada/DSC03679.jpg",
+    "images/nevada/DSC03680.jpg",
+    "images/nevada/DSC03693.jpg"
+  ],
+
+  "portraits": [
+    "images/portraits/DSC01858.jpg",
+    "images/portraits/DSC01992.jpg",
+    "images/portraits/DSC02005.jpg",
+    "images/portraits/DSC02131.jpg",
+    "images/portraits/DSC03363-2.jpg",
+    "images/portraits/DSC03378.jpg",
+    "images/portraits/DSC03432.jpg",
+    "images/portraits/DSC03441.jpg",
+    "images/portraits/DSC03506.jpg",
+    "images/portraits/IMG_5100.jpg",
+    "images/portraits/IMG_8969.jpg"
+  ],
+
+  "travel": [
+    "images/travel/birds.jpg",
+    "images/travel/IMG_7243.jpg",
+    "images/travel/IMG_7323.jpg",
+    "images/travel/IMG_7327.jpg",
+    "images/travel/IMG_7348.jpg",
+    "images/travel/IMG_7357.jpg",
+    "images/travel/laundry.jpg",
+    "images/travel/pier 2.jpg",
+    "images/travel/pier.jpg",
+    "images/travel/stork nest.jpg"
+  ]
+}

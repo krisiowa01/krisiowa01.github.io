@@ -3,114 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <title>KageWolffoto.com</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+    <!-- Banner -->
     <div class="banner">
-        <h1>KageWolffoto</h1>
+        <h1 class="kage-font">KageWolffoto</h1>
         <p>Capturing Moments, Creating Memories</p>
     </div>
 
-    <div class="albums">
+    <!-- Newspaper-style album grid -->
+    <div class="albums" id="albums">
+        <article class="album" onclick="showAlbum('travel')">
+            <img src="images/travel/birds.jpg" alt="Travel">
+            <h2 class="headline">Travel</h2>
+            <p class="summary">Stories from the road captured in fleeting moments.</p>
+        </article>
 
-        <div class="album" data-target="travelGallery">
-            <img src="/images/travel/DSC03679.jpg" class="album-cover">
-            <h2>Travel</h2>
-        </div>
+        <article class="album" onclick="showAlbum('portraits')">
+            <img src="images/portraits/DSC03432.jpg" alt="Portraits">
+            <h2 class="headline">Portraits</h2>
+            <p class="summary">Faces, expressions, and the quiet stories behind them.</p>
+        </article>
 
-        <div class="album" data-target="portraitsGallery">
-            <img src="/images/portraits/DSC03432.jpg" class="album-cover">
-            <h2>Portraits</h2>
-        </div>
+        <article class="album" onclick="showAlbum('nature')">
+            <img src="images/nature/IMG_1183.jpg" alt="Nature">
+            <h2 class="headline">Nature</h2>
+            <p class="summary">Landscapes and wildlife in their raw form.</p>
+        </article>
 
-        <div class="album" data-target="natureGallery">
-            <img src="/images/nature/IMG_1183.jpg" class="album-cover">
-            <h2>Nature</h2>
-        </div>
+        <article class="album" onclick="showAlbum('iowa')">
+            <img src="images/iowa/DSC03296.jpg" alt="Iowa">
+            <h2 class="headline">Iowa</h2>
+            <p class="summary">Scenes from the heartland.</p>
+        </article>
 
-        <div class="album" data-target="nevadaGallery">
-            <img src="/images/nevada/DSC03517.jpg" class="album-cover">
-            <h2>Nevada</h2>
-        </div>
-
-        <div class="album" data-target="iowaGallery">
-            <img src="/images/iowa/DSC03296.jpg" class="album-cover">
-            <h2>Iowa</h2>
-        </div>
-
+        <article class="album" onclick="showAlbum('nevada')">
+            <img src="images/nevada/DSC01686.jpg" alt="Nevada">
+            <h2 class="headline">Nevada</h2>
+            <p class="summary">Desert landscapes and neon nights.</p>
+        </article>
     </div>
 
-    <div id="travelGallery" class="gallery">
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/travel/DSC03679.jpg" onclick="openModal('/images/travel/DSC03679.jpg')">
-        </div>
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/travel/IMG_7348.jpg" onclick="openModal('/images/travel/IMG_7348.jpg')">
-        </div>
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/travel/laundry.jpg" onclick="openModal('/images/travel/laundry.jpg')">
-        </div>
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/DSC03517.jpg" onclick="openModal('/images/DSC03517.jpg')">
-        </div>
-    
-        <!-- Add more travel images here -->
-    </div>
+    <!-- Back button -->
+    <button id="backButton" class="back-button" onclick="goBack()">← Back to Albums</button>
 
-    <div id="portraitsGallery" class="gallery">
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/portraits/DSC03432.jpg" onclick="openModal('/images/portraits/DSC03432.jpg')">
-        </div>
-        <!-- Add more portrait images here -->
-    </div>
+    <!-- Inside album gallery -->
+    <div class="gallery" id="gallery"></div>
 
-    <div id="natureGallery" class="gallery">
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/nature/IMG_1183.jpg" onclick="openModal('/images/nature/IMG_1183.jpg')">
-        </div>
-        <!-- Add more nature images here -->
-    </div>
-
-    <div id="nevadaGallery" class="gallery">
-           <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03517.jpg" onclick="openModal('/images/nevada/DSC03517.jpg')">
-        </div>
-         <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03519.jpg" onclick="openModal('/images/nevada/DSC03519.jpg')">
-        </div>
-         <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03544.jpg" onclick="openModal('/images/nevada/DSC03544.jpg')">
-        </div>
-           <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03545.jpg" onclick="openModal('/images/nevada/DSC03545.jpg')">
-        </div>
-           <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03563.jpg" onclick="openModal('/images/nevada/DSC03563.jpg')">
-        </div>
-           <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03581.jpg" onclick="openModal('/images/nevada/DSC03581.jpg')">
-        </div>
-           <div class="gallery-item">
-            <img class="journal-image" src="/images/nevada/DSC03594-3.jpg" onclick="openModal('/images/nevada/DSC03594-3.jpg')">
-        </div>
-        <!-- Add more Nevada images here -->
-    </div>
-
-    <div id="iowaGallery" class="gallery">
-        <div class="gallery-item">
-            <img class="journal-image" src="/images/DSC03536.jpg" onclick="openModal('/images/DSC03536.jpg')">
-        </div>
-        <!-- Add more Iowa images here -->
-    </div>
-    <div id="albumModal" class="modal"> 
-        <span class="close" onclick="closeAlbumModal()">&times;</span>
-         <div class="album-modal-content" id="albumModalContent">
-         </div> 
-        </div>
-
+    <!-- Image Modal -->
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImage">
