@@ -1,82 +1,62 @@
-document.body.style.backgroundColor = "black";
+document.body.style.backgroundColor = "white";
 
-/* --------------------------------------------------
-   Image Modal (single image view)
--------------------------------------------------- */
-function openModal(imageSrc) {
-    const modal = document.getElementById("myModal");
-    const modalImg = document.getElementById("modalImage");
-    modal.style.display = "block";
-    modalImg.src = imageSrc;
+let albums = {};
+
+// Load albums.json
+fetch("albums.json")
+  .then(response => response.json())
+  .then(data => albums = data);
+
+/* Show album */
+function showAlbum(albumName) {
+    const albumsDiv = document.getElementById('albums');
+    const galleryDiv = document.getElementById('gallery');
+    const backButton = document.getElementById('backButton');
+
+    // Prevent clicking before JSON loads
+    if (!albums[albumName]) {
+        console.warn("Album not loaded yet.");
+        return;
+    }
+
+    albumsDiv.style.display = 'none';
+    galleryDiv.style.display = 'grid';
+    backButton.style.display = 'inline-block';
+    galleryDiv.innerHTML = '';
+
+    albums[albumName].forEach(photo => {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+
+        const img = document.createElement('img');
+        img.src = photo;       // photo is a string
+        img.alt = "";
+        img.classList.add("journal-image");
+
+        img.onclick = () => openModal(photo);
+
+        item.appendChild(img);
+        galleryDiv.appendChild(item);
+    });
 }
 
+/* Open modal */
+function openModal(src) {
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImage");
+
+    modal.style.display = "flex";
+    modalImg.src = src;
+}
+
+/* Close modal */
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
-
-/* --------------------------------------------------
-   Journal Section (auto‑added under each image)
--------------------------------------------------- */
-function addJournalSectionBelowImage(imgElement) {
-    if (imgElement.nextElementSibling?.classList.contains("journal-section")) return;
-
-    const journalDiv = document.createElement("div");
-    journalDiv.className = "journal-section";
-
-    const label = document.createElement("label");
-    label.textContent = "Journal Entry:";
-    label.style.display = "block";
-    label.style.marginBottom = "5px";
-
-    const textarea = document.createElement("textarea");
-    textarea.placeholder = "Write your thoughts here...";
-
-    journalDiv.appendChild(label);
-    journalDiv.appendChild(textarea);
-
-    imgElement.insertAdjacentElement("afterend", journalDiv);
+/* Back button */
+function goBack() {
+    document.getElementById('gallery').style.display = 'none';
+    document.getElementById('albums').style.display = 'block';
+    document.getElementById('backButton').style.display = 'none';
 }
-
-/* Add journal sections automatically */
-document.querySelectorAll(".journal-image").forEach(img => {
-    addJournalSectionBelowImage(img);
-});
-
-
-/* --------------------------------------------------
-   Album Modal (shows all images inside an album)
--------------------------------------------------- */
-function openAlbumModal(galleryId) {
-    const modal = document.getElementById("albumModal");
-    const content = document.getElementById("albumModalContent");
-
-    // Clear previous content
-    content.innerHTML = "";
-
-    // Pull all images from the selected gallery
-    const images = document.querySelectorAll(`#${galleryId} .journal-image`);
-
-    images.forEach(img => {
-        const clone = img.cloneNode(true);
-        clone.onclick = () => openModal(clone.src); // open single-image modal
-        content.appendChild(clone);
-    });
-
-    modal.style.display = "block";
-}
-
-function closeAlbumModal() {
-    document.getElementById("albumModal").style.display = "none";
-}
-
-
-/* --------------------------------------------------
-   Album Click Handler (open album modal)
--------------------------------------------------- */
-document.querySelectorAll(".album").forEach(album => {
-    album.addEventListener("click", () => {
-        const target = album.getAttribute("data-target");
-        openAlbumModal(target);
-    });
-});
