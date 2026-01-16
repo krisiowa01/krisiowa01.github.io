@@ -38,12 +38,6 @@ body {
     font-weight: bold;
 }
 
-/* .summary {
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #333
-} */
-
 .summary {
     font-family: "Playfair Display", serif;
     font-size: 1.15rem;
@@ -58,10 +52,18 @@ body {
     gap: 20px;
 }
 
-.journal-image {
+/* NEW: Keep gallery images from becoming huge */
+.gallery-item {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.gallery img {
     width: 100%;
     height: auto;
-    cursor: pointer;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 /* Modal */
@@ -101,7 +103,27 @@ body {
     font-family: Georgia, serif; 
 }
 
-.back-button:hover
- { 
+.back-button:hover { 
     background: #333; 
+}
+
+.modal-caption {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeInCaption 0.4s ease forwards;
+}
+
+/* Soft fade-in animation */
+@keyframes fadeInCaption {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
