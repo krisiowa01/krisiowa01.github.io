@@ -13,7 +13,6 @@ function showAlbum(albumName) {
     const galleryDiv = document.getElementById('gallery');
     const backButton = document.getElementById('backButton');
 
-    // Prevent clicking before JSON loads
     if (!albums[albumName]) {
         console.warn("Album not loaded yet.");
         return;
@@ -29,11 +28,13 @@ function showAlbum(albumName) {
         item.className = 'gallery-item';
 
         const img = document.createElement('img');
-        img.src = photo;       // photo is a string
-        img.alt = "";
+
+        // IMPORTANT: your JSON now uses objects
+        img.src = photo.src;
+        img.alt = photo.caption || "";
         img.classList.add("journal-image");
 
-        img.onclick = () => openModal(photo);
+        img.onclick = () => openModal(photo.src, photo.caption);
 
         item.appendChild(img);
         galleryDiv.appendChild(item);
@@ -41,12 +42,14 @@ function showAlbum(albumName) {
 }
 
 /* Open modal */
-function openModal(src) {
+function openModal(src, caption) {
     const modal = document.getElementById("myModal");
     const modalImg = document.getElementById("modalImage");
+    const modalCaption = document.getElementById("modalCaption");
 
     modal.style.display = "flex";
     modalImg.src = src;
+    modalCaption.textContent = caption || "";
 }
 
 /* Close modal */
