@@ -44,6 +44,9 @@
     { "src": "images/nevada/DSC03677.jpg", "caption": "Reminded me of seeing a bunch of kids bikes all laid together in someone's yard like it was 1990 and kids still played outside." },
     { "src": "images/nevada/DSC03679.jpg", "caption": "Gotta go a few miles to get deep enough. Even then ya'll might still be walking on water." },
     { "src": "images/nevada/DSC03680.jpg", "caption": "My uncles girlfriend and her little dog too." },
+    {"src": "images/nevada/IMG_0205.jpg", "caption": "Having a biblical moment." },
+    {"src": "images/nevada/IMG_1372.jpg", "caption": "Look back at it - Lil Wayne"},
+    {"src": "images/nevada/IMG_5865.jpg", "caption": "I think I can fly - R Kelly"},
     { "src": "images/nevada/DSC02661.jpg", "caption": "Still in Death Valley! The views are almost limitless." },
     { "src": "images/nevada/DSC02663.jpg", "caption": "The layers of mountains never get old." },
     { "src": "images/nevada/DSC02666.jpg", "caption": "BTW I had just had surgery and this was my mandatory walk of the day. Not a bad view!" },
@@ -54,21 +57,31 @@
     { "src": "images/nevada/DSC03232.jpg", "caption": "Ladder loop trail, Mt. Charleston. About a block up from this location my good friend from Iowa was married! " },
     { "src": "images/nevada/DSC03233.jpg", "caption": "Solo dolo - hiking. It's the best way to sort out thoughts." },
     { "src": "images/nevada/DSC03234.jpg", "caption": "Peace, quiet and a conversation with God." },
-    { "src": "images/nevada/DSC03594-3.jpg", "caption": "8 minutes from home and I can hardly wait to pee but again, had to take this shot." }
+    { "src": "images/nevada/DSC03594-3.jpg", "caption": "8 minutes from home and I can hardly wait to pee but again, had to take this shot." },
+    { "src": "images/nevada/DSC02795.jpg", "caption": "Cowboy Canyon facing Red Rock Canyon. Was hiking around with some friends and if I told you they brought a little weiner dog that was leading the way! " },
+    { "src": "images/nevada/DSC02800.jpg", "caption": "The first friend that I met besides my realtor! Oriana and her husband Jason. Can you spot the little pup in her backpack?! " },
+    { "src": "images/nevada/DSC02806.jpg", "caption": "If anyone is interested, they give horse back rides here at Cowboy Canyon." },
+    { "src": "images/nevada/DSC02944.jpg", "caption": "Let's enter Red Rock Canyon because this was my 'backyard' for three years." },
+    { "src": "images/nevada/DSC02947.jpg", "caption": "Taking this trail with the hope that I'll find the waterfall. Ps. I never found it but did come across a pretty grand creek." },
+    { "src": "images/nevada/DSC02951.jpg", "caption": "The red stripes of the canyon walls." },
+    { "src": "images/nevada/DSC02953.jpg", "caption": "Even in the desert, flowers grow." },
+    { "src": "images/nevada/DSC02958.jpg", "caption": "Red Rock Canyon..." },
+    { "src": "images/nevada/DSC02964.jpg", "caption": "...the views are endless." }
+   
   ],
 
   "portraits": [
-    { "src": "images/portraits/DSC01858.jpg", "caption": "" },
-    { "src": "images/portraits/DSC01992.jpg", "caption": "" },
-    { "src": "images/portraits/DSC02005.jpg", "caption": "" },
-    { "src": "images/portraits/DSC02131.jpg", "caption": "" },
-    { "src": "images/portraits/DSC03363-2.jpg", "caption": "" },
-    { "src": "images/portraits/DSC03378.jpg", "caption": "" },
-    { "src": "images/portraits/DSC03432.jpg", "caption": "" },
-    { "src": "images/portraits/DSC03441.jpg", "caption": "" },
-    { "src": "images/portraits/DSC03506.jpg", "caption": "" },
-    { "src": "images/portraits/IMG_5100.jpg", "caption": "" },
-    { "src": "images/portraits/IMG_8969.jpg", "caption": "" }
+    { "src": "images/portraits/DSC01858.jpg", "caption": "Hello to the Renaas Family!" },
+    { "src": "images/portraits/DSC01992.jpg", "caption": "Perhaps the last man to carry on the Renaas name and his beautiful babies." },
+    { "src": "images/portraits/DSC02005.jpg", "caption": "Sethers - and his mini me and mini Kayla bug!" },
+    { "src": "images/portraits/DSC02131.jpg", "caption": "Natural beauty. Inside and Out." },
+    { "src": "images/portraits/DSC03363-2.jpg", "caption": "Doesn't matter if you're black or white - M.Jackson" },
+    { "src": "images/portraits/DSC03378.jpg", "caption": "On repeat." },
+    { "src": "images/portraits/DSC03432.jpg", "caption": "Merry Christmas you filthy animals!" },
+    { "src": "images/portraits/DSC03441.jpg", "caption": "Snow white and the seven dwarfs." },
+    { "src": "images/portraits/DSC03506.jpg", "caption": "Many winters ago, there was a guy on IG who said 'turn on your flash' so that's what I did." },
+    { "src": "images/portraits/IMG_5100.jpg", "caption": "Covid is the worst...hindsight this was between Covid and the Derecho. Boy was our lives about to change." },
+    { "src": "images/portraits/IMG_8969.jpg", "caption": "My big sis or Hercules?" }
   ],
 
   "travel": [
