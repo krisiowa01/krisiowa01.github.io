@@ -96,8 +96,8 @@ body {
     margin: 20px 40px; 
     padding: 10px 20px; 
     font-size: 1.2rem; 
-    background: black; 
-    color: white; 
+    background: white; 
+    color: black; 
     border: none; 
     cursor: pointer; 
     font-family: Georgia, serif; 
@@ -126,4 +126,11 @@ body {
 @keyframes fadeInCaption {
     from { opacity: 0; transform: translateY(5px); }
     to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .albums {
+        column-count: 2;
+    }
 }
