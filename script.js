@@ -27,16 +27,21 @@ function showAlbum(albumName) {
         const item = document.createElement('div');
         item.className = 'gallery-item';
 
-        const img = document.createElement('img');
+        // Create watermark wrapper
+        const wrapper = document.createElement('div');
+        wrapper.className = 'watermarked';
 
-        // IMPORTANT: your JSON now uses objects
+        // Create image
+        const img = document.createElement('img');
         img.src = photo.src;
         img.alt = photo.caption || "";
         img.classList.add("journal-image");
 
         img.onclick = () => openModal(photo.src, photo.caption);
 
-        item.appendChild(img);
+        // Build structure
+        wrapper.appendChild(img);
+        item.appendChild(wrapper);
         galleryDiv.appendChild(item);
     });
 }

@@ -14,10 +14,11 @@ body {
 }
 
 /* Newspaper-style album layout */
-.albums {
-    column-count: 3;
-    column-gap: 40px;
-    padding: 40px;
+.albums { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 1.5rem; 
+    padding: 1rem;
 }
 
 .album {
@@ -26,10 +27,12 @@ body {
     cursor: pointer;
 }
 
-.album img {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
+.album img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+    border-radius: 4px;
 }
 
 .headline {
@@ -42,6 +45,8 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 1.15rem;
     line-height: 1.6;
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 /* Gallery view */
@@ -52,7 +57,7 @@ body {
     gap: 20px;
 }
 
-/* NEW: Keep gallery images from becoming huge */
+/* Keep gallery images from becoming huge */
 .gallery-item {
     width: 100%;
     max-width: 350px;
@@ -121,6 +126,26 @@ body {
     opacity: 0;
     animation: fadeInCaption 0.4s ease forwards;
 }
+
+.watermarked { 
+    position: relative; 
+    display: inline-block; 
+} 
+    
+.watermarked::after { 
+    content: "kagewolf"; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: "Great Vibes", cursive; 
+    font-size: 3rem; 
+    color: rgba(255, 255, 255, 0.25); 
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+    pointer-events: none; 
+    white-space: nowrap;
+ }
+
 
 /* Soft fade-in animation */
 @keyframes fadeInCaption {
