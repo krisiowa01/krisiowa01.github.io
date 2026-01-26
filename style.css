@@ -153,37 +153,9 @@ body {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ----------------------------- */
-/* MOBILE RESPONSIVE ADJUSTMENTS */
-/* ----------------------------- */
-
-@media (max-width: 600px) {
-
-    .banner {
-        padding: 20px 0;
-    }
-
+/* Responsive adjustments */
+@media (max-width: 900px) {
     .albums {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .headline {
-        font-size: 1.3rem;
-    }
-
-    .summary {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    .modal-caption {
-        font-size: 1rem;
-        max-width: 90%;
-    }
-
-    .gallery {
-        padding: 20px;
-        grid-template-columns: 1fr;
+        column-count: 2;
     }
 }
