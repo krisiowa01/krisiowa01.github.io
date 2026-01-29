@@ -13,18 +13,23 @@ body {
     border-bottom: 3px solid black;
 }
 
-/* Newspaper-style album layout */
+/* Album Grid — Always Two Columns */
 .albums { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 1.5rem; 
-    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr); /* always two columns */
+    gap: 2.5rem; 
+    padding: 2rem 3rem;
 }
 
 .album {
-    break-inside: avoid;
-    margin-bottom: 40px;
     cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Magazine-style hover effect */
+.album:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .album img { 
@@ -36,8 +41,8 @@ body {
 }
 
 .headline {
-    font-size: 1.6rem;
-    margin: 0;
+    font-size: 1.8rem;
+    margin: 10px 0 5px;
     font-weight: bold;
 }
 
@@ -52,9 +57,9 @@ body {
 /* Gallery view */
 .gallery {
     display: none;
-    padding: 40px;
+    padding: 40px 3rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
 
 /* Keep gallery images from becoming huge */
@@ -64,11 +69,37 @@ body {
     margin: 0 auto;
 }
 
+/* Soft zoom hover for gallery images */
 .gallery img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Watermark overlay */
+.watermarked { 
+    position: relative; 
+    display: inline-block; 
+}
+
+.watermarked::after { 
+    content: "kagewolf"; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: "Great Vibes", cursive; 
+    font-size: 3rem; 
+    color: rgba(255, 255, 255, 0.25); 
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+    pointer-events: none; 
+    white-space: nowrap;
 }
 
 /* Modal */
@@ -78,15 +109,64 @@ body {
     inset: 0;
     background: rgba(0,0,0,0.9);
     justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+/* Inner modal layout */
+.modal-inner {
+    max-width: 90vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+/* Wrapper that controls image sizing */
+.modal-image-wrapper {
+    max-width: 100%;
+    max-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Watermark wrapper inside modal */
+.modal .watermarked {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* Modal image */
+.modal-content { 
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+}
+
+/* Caption directly under image */
+.modal-caption {
+    margin-top: 20px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
     text-align: center;
+    max-width: 80%;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeInCaption 0.4s ease forwards;
 }
 
-.modal-content {
-    max-width: 90%;
-    max-height: 90%;
-}
-
+/* Close button */
 .close {
     position: absolute;
     top: 20px;
@@ -96,6 +176,7 @@ body {
     cursor: pointer;
 }
 
+/* Back button */
 .back-button { 
     display: none;
     margin: 20px 40px; 
@@ -112,42 +193,7 @@ body {
     background: #333; 
 }
 
-.modal-caption {
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 1.3rem;
-    margin-top: 20px;
-    text-align: center;
-    letter-spacing: 0.5px;
-    line-height: 1.4;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    animation: fadeInCaption 0.4s ease forwards;
-}
-
-.watermarked { 
-    position: relative; 
-    display: inline-block; 
-} 
-    
-.watermarked::after { 
-    content: "kagewolf"; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-family: "Great Vibes", cursive; 
-    font-size: 3rem; 
-    color: rgba(255, 255, 255, 0.25); 
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
-    pointer-events: none; 
-    white-space: nowrap;
- }
-
-
-/* Soft fade-in animation */
+/* Caption fade-in */
 @keyframes fadeInCaption {
     from { opacity: 0; transform: translateY(5px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -156,6 +202,6 @@ body {
 /* Responsive adjustments */
 @media (max-width: 900px) {
     .albums {
-        column-count: 2;
+        grid-template-columns: 1fr; /* one column on mobile */
     }
 }
