@@ -67,4 +67,7 @@ function goBack() {
     document.getElementById('gallery').style.display = 'none';
     document.getElementById('albums').style.display = 'block';
     document.getElementById('backButton').style.display = 'none';
+    document.getElementById("about").style.display = "none";
 }
+
+function showAbout() { document.getElementById("albums").style.display = "none"; document.getElementById("gallery").style.display = "none"; document.getElementById("backButton").style.display = "block"; document.getElementById("about").style.display = "block"; }

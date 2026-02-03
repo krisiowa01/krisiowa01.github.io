@@ -14,6 +14,7 @@
     <div class="banner">
         <h1 class="kage-font">KageWolffoto</h1>
         <p>Capturing Moments, Creating Memories</p>
+        <a href="#" class="about-link" onclick="showAbout()">About Me</a>    
     </div>
 
     <!-- Newspaper-style album grid -->
@@ -47,7 +48,14 @@
             <h2 class="headline">Nevada</h2>
             <p class="summary">The Nevada collection moves between desert silence and neon glow, revealing a landscape of contrasts. Harsh sunlight, endless horizons, and the surreal geometry of the desert meet the electric pulse of city nights. These images explore the tension between isolation and spectacle, showing Nevada as a place where emptiness and energy coexist.</p>
         </article>
+
+         <article class="album" onclick="showAlbum('albuquerque')">
+            <img loading="lazy" src="images/albuquerque/dream.webp" alt="Albuquerque">
+            <h2 class="headline">Albuquerque</h2>
+            <p class="summary">The Albuquerque collection captures the unique character of New Mexico's capital city. From the vibrant colors of local markets to the quiet beauty of desert landscapes, these images reflect the blend of cultural richness and natural splendor that defines this place.</p>
+        </article>
     </div>
+
 
     <!-- Back button -->
     <button id="backButton" class="back-button" onclick="goBack()">← Back to Albums</button>
@@ -63,7 +71,6 @@
         </div> 
   <p id="modalCaption" class="modal-caption"></p> 
     </div> 
- </div>
 
     <script src="script.js"></script>
 </body>
