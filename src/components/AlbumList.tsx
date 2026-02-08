@@ -1,22 +1,15 @@
-<<<<<<< HEAD
 import AlbumCard from "./AlbumCard";
+import type { Album } from "../types/Albums";
 
 interface AlbumListProps {
-  albums: any;
+  albums: Album[];
   onSelect: (albumName: string) => void;
-=======
-import type { Albums } from "../types";
-
-interface AlbumListProps {
-  albums: Albums;
-  onSelect: (name: string) => void;
->>>>>>> main
 }
 
 export default function AlbumList({ albums, onSelect }: AlbumListProps) {
   return (
     <div className="albums">
-      {albums.albums.map((album: any) => (
+      {albums.map((album) => (
         <AlbumCard
           key={album.id}
           name={album.id}
