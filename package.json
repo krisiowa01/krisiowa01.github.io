@@ -1,12 +1,19 @@
 {
+<<<<<<< HEAD
+  "name": "kagewolffoto",
+=======
   "name": "kagewolffoto-react",
+>>>>>>> main
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+<<<<<<< HEAD
+=======
     "deploy": "npm run build && powershell -Command \"Copy-Item -Path './dist/*' -Destination '.' -Recurse -Force; git add .; git commit -m 'Deploy updates'; git push origin main\"",
+>>>>>>> main
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -27,9 +34,13 @@
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
+<<<<<<< HEAD
+    "vite": "^7.2.4"
+=======
     "vite": "npm:rolldown-vite@7.2.5"
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
+>>>>>>> main
   }
 }
