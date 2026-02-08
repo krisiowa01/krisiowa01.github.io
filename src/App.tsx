@@ -7,13 +7,21 @@ import BackButton from "./components/BackButton";
 import "./style.css";
 
 import albumsData from "./data/albums.json";
+<<<<<<< HEAD
 import { Albums } from "./types/Albums";
+=======
+import type { Albums } from "./types";
+>>>>>>> main
 
 const albums: Albums = albumsData as Albums;
 
 export default function App() {
   const [selectedAlbum, setSelectedAlbum] = useState<string | null>(null);
+<<<<<<< HEAD
   const [showAbout, setShowAbout] = useState(false);
+=======
+  const [showAbout, setShowAbout] = useState<boolean>(false);
+>>>>>>> main
 
   const handleSelectAlbum = (albumName: string) => {
     setSelectedAlbum(albumName);
@@ -41,7 +49,11 @@ export default function App() {
       {selectedAlbum && !showAbout && (
         <Gallery
           albumName={selectedAlbum}
+<<<<<<< HEAD
           photos={albums.albums.find(a => a.id === selectedAlbum)?.photos || []}
+=======
+          photos={albums[selectedAlbum].photos}
+>>>>>>> main
         />
       )}
 

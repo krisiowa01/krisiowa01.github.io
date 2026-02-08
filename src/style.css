@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* --------------------------------------------------
    GLOBAL TYPOGRAPHY & BASE
 -------------------------------------------------- */
@@ -20,6 +21,21 @@ html { scroll-behavior: smooth; }
 /* --------------------------------------------------
    BANNER
 -------------------------------------------------- */
+=======
+/* General */
+body {
+    font-family: "Playfair Display", serif;
+    background: #f4f1e8;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Playfair Display", serif;
+}
+
+/* Banner */
+>>>>>>> main
 .banner {
     text-align: center;
     padding: 40px 0;
@@ -33,7 +49,11 @@ html { scroll-behavior: smooth; }
     margin: 0;
 }
 
+<<<<<<< HEAD
 /* About link under banner */
+=======
+/* About link */
+>>>>>>> main
 .about-link {
     display: inline-block;
     margin-top: 10px;
@@ -51,9 +71,13 @@ html { scroll-behavior: smooth; }
     border-bottom-color: #333;
 }
 
+<<<<<<< HEAD
 /* --------------------------------------------------
    ALBUM GRID
 -------------------------------------------------- */
+=======
+/* Album Grid — Always Two Columns */
+>>>>>>> main
 .albums { 
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
@@ -79,6 +103,7 @@ html { scroll-behavior: smooth; }
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
 /* Album title */
 .headline {
     font-family: "Fraunces", serif;
@@ -104,6 +129,29 @@ html { scroll-behavior: smooth; }
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 40px 3rem;
+=======
+.headline {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.8rem;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.summary {
+    font-family: "Playfair Display", serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+/* Gallery */
+.gallery {
+    display: none;
+    padding: 40px 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+>>>>>>> main
 }
 
 .gallery-item {
@@ -112,7 +160,10 @@ html { scroll-behavior: smooth; }
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* Gallery images */
+=======
+>>>>>>> main
 .gallery img {
     width: 100%;
     height: auto;
@@ -125,6 +176,7 @@ html { scroll-behavior: smooth; }
     transform: scale(1.03);
 }
 
+<<<<<<< HEAD
 /* Captions under each photo */
 .gallery-caption {
     margin-top: 10px;
@@ -140,6 +192,63 @@ html { scroll-behavior: smooth; }
 /* --------------------------------------------------
    BACK BUTTON
 -------------------------------------------------- */
+=======
+/* Watermark */
+.watermarked { 
+    position: relative; 
+    display: inline-block; 
+}
+
+.watermarked::after { 
+    content: "kagewolf"; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: "Great Vibes", cursive; 
+    font-size: 3rem; 
+    color: rgba(255, 255, 255, 0.25); 
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+    pointer-events: none; 
+    white-space: nowrap;
+}
+
+.headline {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: black;
+}
+
+.summary {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #222;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); /* two columns */ gap: 25px; padding: 40px 3rem; }
+
+.gallery-caption {
+    font-family: "Playfair Display", serif !important;
+    font-size: 1rem !important;
+    line-height: 1.6;
+    color: #222;
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* Override any inherited Great Vibes font */
+.gallery-item p {
+    font-family: "Playfair Display", serif !important;
+}
+
+
+>>>>>>> main
 .back-button { 
     display: block;
     margin: 20px 40px; 
@@ -157,19 +266,31 @@ html { scroll-behavior: smooth; }
     color: white;
 }
 
+<<<<<<< HEAD
 /* --------------------------------------------------
    ABOUT PAGE
 -------------------------------------------------- */
+=======
+/* About section */
+>>>>>>> main
 .about-section {
     max-width: 900px;
     margin: 80px auto;
     padding: 0 20px;
+<<<<<<< HEAD
     font-family: "Fraunces", serif;
+=======
+    font-family: 'Playfair Display', serif;
+>>>>>>> main
     line-height: 1.7;
 }
 
 .about-section h2 {
+<<<<<<< HEAD
     font-family: "Fraunces", "Great Vibes", cursive;
+=======
+    font-family: "Great Vibes", cursive;
+>>>>>>> main
     color: black;
     font-size: 3rem;
     margin-bottom: 20px;
@@ -190,15 +311,27 @@ html { scroll-behavior: smooth; }
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+<<<<<<< HEAD
 /* --------------------------------------------------
    RESPONSIVE
 -------------------------------------------------- */
+=======
+html { scroll-behavior: smooth; }
+
+/* Responsive */
+>>>>>>> main
 @media (max-width: 900px) {
     .albums {
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
 
     .gallery {
         grid-template-columns: 1fr;
     }
 }
+=======
+}
+
+@media (max-width: 900px) { .gallery { grid-template-columns: 1fr; /* one column on mobile */ } }
+>>>>>>> main
