@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -18,11 +17,4 @@
     "jsx": "react-jsx"
   },
   "include": ["src"]
-=======
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
->>>>>>> main
 }
