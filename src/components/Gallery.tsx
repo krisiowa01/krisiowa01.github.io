@@ -3,9 +3,7 @@ interface Photo {
   caption: string;
 }
 
-interface GalleryProps {
-  photos: Photo[];
-}
+interface GalleryProps { albumName: string; photos: Photo[]; }
 
 export default function Gallery({ photos }: GalleryProps) {
   return (

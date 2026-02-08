@@ -9,7 +9,8 @@ import "./style.css";
 import albumsData from "./data/albums.json";
 import { Albums } from "./types/Albums";
 
-const albums: Albums = albumsData as Albums;
+const albums = albumsData as Albums;
+
 
 export default function App() {
   const [selectedAlbum, setSelectedAlbum] = useState<string | null>(null);
