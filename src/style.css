@@ -1,0 +1,204 @@
+/* --------------------------------------------------
+   GLOBAL TYPOGRAPHY & BASE
+-------------------------------------------------- */
+body {
+    font-family: "Fraunces", serif;
+    background: #f4f1e8;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+p {
+    font-family: "Fraunces", serif;
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* --------------------------------------------------
+   BANNER
+-------------------------------------------------- */
+.banner {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 3px solid black;
+}
+
+.banner h1 {
+    font-family: "Great Vibes", cursive;
+    color: black;
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* About link under banner */
+.about-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: 0.3s ease;
+}
+
+.about-link:hover {
+    color: #333;
+    border-bottom-color: #333;
+}
+
+/* --------------------------------------------------
+   ALBUM GRID
+-------------------------------------------------- */
+.albums { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem; 
+    padding: 2rem 3rem;
+}
+
+.album {
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.album:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.album img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+    border-radius: 4px;
+}
+
+/* Album title */
+.headline {
+    font-family: "Fraunces", serif;
+    font-size: 1.8rem;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Album description */
+.summary {
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    color: #222;
+    overflow-wrap: anywhere;
+}
+
+/* --------------------------------------------------
+   GALLERY GRID
+-------------------------------------------------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 40px 3rem;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Gallery images */
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Captions under each photo */
+.gallery-caption {
+    margin-top: 10px;
+    font-family: "Fraunces", serif;
+    font-size: 1.1rem;
+    color: #222;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+
+/* --------------------------------------------------
+   BACK BUTTON
+-------------------------------------------------- */
+.back-button { 
+    display: block;
+    margin: 20px 40px; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    background: white; 
+    color: black; 
+    border: none; 
+    cursor: pointer; 
+    font-family: Georgia, serif; 
+}
+
+.back-button:hover { 
+    background: #333; 
+    color: white;
+}
+
+/* --------------------------------------------------
+   ABOUT PAGE
+-------------------------------------------------- */
+.about-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: "Fraunces", serif;
+    line-height: 1.7;
+}
+
+.about-section h2 {
+    font-family: "Fraunces", "Great Vibes", cursive;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-photos {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-section img {
+    width: 280px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 900px) {
+    .albums {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

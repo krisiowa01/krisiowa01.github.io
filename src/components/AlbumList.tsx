@@ -8,14 +8,14 @@ interface AlbumListProps {
 export default function AlbumList({ albums, onSelect }: AlbumListProps) {
   return (
     <div className="albums">
-      {Object.entries(albums).map(([key, album]: any) => (
+      {albums.albums.map((album: any) => (
         <AlbumCard
-          key={key}
-          name={key}
+          key={album.id}
+          name={album.id}
           image={album.cover}
           headline={album.title}
           summary={album.description}
-          onClick={() => onSelect(key)}
+          onClick={() => onSelect(album.id)}
         />
       ))}
     </div>

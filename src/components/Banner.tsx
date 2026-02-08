@@ -1,16 +1,16 @@
 import React from "react";
 
 interface BannerProps {
-  onAbout: () => void;
+  onAboutClick: () => void;
 }
 
-export default function Banner({ onAbout }: BannerProps) {
+export default function Banner({ onAboutClick }: BannerProps) {
   return (
     <div className="banner">
       <h1 className="kage-font">KageWolffoto</h1>
       <p>Capturing Moments, Creating Memories</p>
 
-      <button className="about-link" onClick={onAbout}>
+      <button className="about-link" onClick={onAboutClick}>
         About Me
       </button>
     </div>
