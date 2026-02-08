@@ -1,9 +1,14 @@
+export interface Photo {
+  src: string;
+  caption: string;
+}
+
 export interface Album {
   id: string;
   title: string;
   description: string;
   cover: string;
-  photos: string[];   // ← important
+  photos: Photo[];
 }
 
 export interface Albums {
