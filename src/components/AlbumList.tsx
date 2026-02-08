@@ -16,7 +16,6 @@ interface AlbumListProps {
 export default function AlbumList({ albums, onSelect }: AlbumListProps) {
   return (
     <div className="albums">
-<<<<<<< HEAD
       {albums.albums.map((album: any) => (
         <AlbumCard
           key={album.id}
@@ -26,14 +25,6 @@ export default function AlbumList({ albums, onSelect }: AlbumListProps) {
           summary={album.description}
           onClick={() => onSelect(album.id)}
         />
-=======
-      {Object.entries(albums).map(([name, album]) => (
-        <div className="album" key={name} onClick={() => onSelect(name)}>
-          <img src={album.cover} alt={album.title} />
-          <h2 className="headline">{album.title}</h2>
-          <p className="summary">{album.description}</p>
-        </div>
->>>>>>> main
       ))}
     </div>
   );
