@@ -33,11 +33,7 @@ html { scroll-behavior: smooth; }
     margin: 0;
 }
 
-<<<<<<< HEAD
 /* About link under banner */
-=======
-/* About link */
->>>>>>> main
 .about-link {
     display: inline-block;
     margin-top: 10px;
