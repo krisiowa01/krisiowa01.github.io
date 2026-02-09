@@ -1,6 +1,8 @@
 /* --------------------------------------------------
    GLOBAL TYPOGRAPHY & BASE
 -------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Fraunces:wght@300;400;700&display=swap");
+
 body {
     font-family: "Fraunces", serif;
     background: #f4f1e8;
