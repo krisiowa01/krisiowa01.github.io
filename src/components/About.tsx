@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="about-section" id="about">
-      <h2>About Me</h2>
+      <h2>KageWolf</h2>
       <p>
        Hello! Thanks so much for visiting my photography portfolio. The story of how I started taking photos is… unconventional. I had a crush on a photographer and was hoping he’d notice me and maybe find me charming. Let’s just say it played out very differently in my head. But while the crush didn’t go anywhere, something else did: my connection with the camera. That part was mutual.
 
