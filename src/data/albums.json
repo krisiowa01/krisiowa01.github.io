@@ -26,7 +26,7 @@
         { "src": "images/iowa/DSC03341.webp", "caption": "Now that's a welcome sign! It's never goodbye, it's always see you later" },
         { "src": "images/iowa/IMG_0720.webp", "caption": "My dad planted this natural privacy fence and now it carefully collects each snow flake like precious pieces of time." },
         { "src": "images/iowa/IMG_5347.webp", "caption": "Lake MacBride - on a blanky with my baby" },
-        { "src": "images/iowa/IMG_5428.webp", "caption": "This trail and I are close companions. Over the years, it's seen me smiling from ear to ear and it's seen me crying my eyes out. When I made Varsity Tennis, I walked this trail and could not stop smiling. I had never fought so ficously for something I wanted before. I battled for my spot and I won. I remember crying my eyes out until the tears stopped forming after my High School boyfriend of four years dumbed me. He wanted to explore other options and I thought we were going to marry. Ha Ha. Oh boy. " }
+        { "src": "images/iowa/IMG_5428.webp", "caption": "This trail and I are close companions. Over the years, it's seen me smiling from ear to ear and it's seen me crying my eyes out. When I made Varsity Tennis, I walked this trail and could not stop smiling. I had never fought so viciously for something I wanted before. I battled for my spot and I won. I remember crying my eyes out until the tears stopped forming after my High School boyfriend of four years dumbed me. He wanted to explore other options and I thought we were going to marry. Ha Ha. Oh boy. " }
       ]
     },
     {
@@ -52,7 +52,7 @@
       "description": "Back in 2004 I visited Las Vegas for the first time - it was a free vacation. A flight that was suppose to be for a boyfriend but they broke up and I went instead. I remember falling in love with the city. The lights, the warmth, the desert landscape, mountains 360 and how much I felt like I belonged. It may sound strange to some, a woman who doesn't drink, smoke or gamble loving Vegas but I did and I always knew one day, I would end up here.",
       "cover": "images/nevada/DSC01686.webp",
       "photos": [
-       {"src": "images/nevada/DSC01686.webp", "caption": "In 2023, I heard that the Bad Waters in Death Valley, the hottest place on the planet, had a lake form for the first time in 10,0000 years, I could hardly wait to go see it."},
+       {"src": "images/nevada/DSC01686.webp", "caption": "In 2023, I heard that the Bad Waters in Death Valley, the hottest place on the planet, had a lake form for the first time in 10,000 years, I could hardly wait to go see it."},
        {"src": "images/nevada/DSC01691.webp", "caption": "It felt like driving up to a mirage. One of the most incredible views I've ever seen in my entire life."},
        {"src": "images/nevada/DSC02493.webp", "caption": "Can you believe that this is Death Valley and that's overlooking the Bad Waters which is a giant salt basin? Yep, that's before the Lake appeared! "},
        {"src": "images/nevada/DSC02661.webp", "caption": "My aunt flew over from Bonita Springs, FL to come stay and take care of me. Surgery after surgery, I've never been more tired of surgeries but when they say Cancer you do whatever it takes. This was one of my after surgery mandatory walks, not a bad view! "},
@@ -70,7 +70,6 @@
 {"src": "images/nevada/DSC02953.webp", "caption": "Even in the desert flowers grow"},
 {"src": "images/nevada/DSC02958.webp", "caption": "Red stripings in the rock formations."},
 {"src": "images/nevada/DSC02964.webp", "caption": "Almost got lost but luckily, I found a creek and followed it back to the trail! "},
-{"src": "images/nevada/DSC02965.webp", "caption": "The desert is full of surprises."},
 {"src": "images/nevada/DSC03151.webp", "caption": "Welcome to Mt. Charleston! The very first mountain I ever hiked on my 30th bday!"},
 {"src": "images/nevada/DSC03232.webp", "caption": "Ladder loop trail - Mt. Charleston."},
 {"src": "images/nevada/DSC03233.webp", "caption": "Hiking solo and conversations with God is how I roll"},
@@ -127,7 +126,7 @@
     {
       "id": "travel",
       "title": "Travel",
-      "description": "Travel has always been a source of inspiration and growth for me. It pushes me beyond my comfort zone, introduces me to new cultures, and lets me see the world through fresh perspectives. These photos capture the spirit of those journeys from breathtaking landscapes to vibrant cityscape and all the small moments of awe that come with exploring somewhere new. My love for travel started with my very first trip as a teenage when my dad took me to Florida for Christmas. Instead of bundling up and navigating snow and freezing temperatures we spent the holiday on a warm beach. One memory we still laugh about is visiting a zoo. I had just started learning sign language and proudly signed “hello” to a chimp. When it raised its hand as if to wave bac my dad forever joking the girl that talks to chimps. That trip sparked something in me. From that moment on I knew travel was something I wanted more of in my life. It has continued to bring me joy perspective and inspiration ever since.",
+      "description": "Travel has always been a source of inspiration and growth for me. It pushes me beyond my comfort zone, introduces me to new cultures, and lets me see the world through fresh perspectives. These photos capture the spirit of those journeys from breathtaking landscapes to vibrant cityscape and all the small moments of awe that come with exploring somewhere new. My love for travel started with my very first trip as a teenage when my dad took me to Florida for Christmas. Instead of bundling up and navigating snow and freezing temperatures we spent the holiday on a warm beach. One memory we still laugh about is visiting a zoo. I had just started learning sign language and proudly signed “hello” to a chimp. When it raised its hand as if to wave back my dad forever joking the girl that talks to chimps. That trip sparked something in me. From that moment on I knew travel was something I wanted more of in my life. It has continued to bring me joy perspective and inspiration ever since.",
       "cover": "images/travel/birds.webp",
       "photos": [
        {"src": "images/travel/birds.webp", "caption": "Three little birds - Bob Marley but in Portugal"},
