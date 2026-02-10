@@ -142,11 +142,11 @@ html {
     margin: 20px 40px; 
     padding: 10px 20px; 
     font-size: 1.2rem; 
-    background: white; 
+    background: rgba(255, 255, 255, 0.224); 
     color: black; 
     border: none; 
     cursor: pointer; 
-    font-family: "Great Vibes", cursive; 
+    font-family: "Fraunces", serif; 
 }
 
 .back-button:hover { 
@@ -161,12 +161,12 @@ html {
     max-width: 900px;
     margin: 80px auto;
     padding: 0 20px;
-    font-family: "Fraunces", serif;
+    font-family: "Greate Vibes", cursive;
     line-height: 1.7;
 }
 
 .about-section h2 {
-    font-family: "Fraunces", serif;
+    font-family: "Great Vibes", cursive;
     color: black;
     font-size: 3rem;
     margin-bottom: 20px;

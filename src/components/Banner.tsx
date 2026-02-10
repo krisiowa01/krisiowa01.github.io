@@ -8,7 +8,7 @@ export default function Banner({ onAboutClick }: BannerProps) {
   return (
     <div className="banner">
       <h1 className="kage-font">KageWolffoto</h1>
-      <p>Capturing Moments, Creating Memories</p>
+      <p>A Personal Journey Through Time and Space</p>
 
       <button className="about-link" onClick={onAboutClick}>
         About Me
