@@ -1,6 +1,3 @@
-/* --------------------------------------------------
-   GLOBAL TYPOGRAPHY & BASE
--------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Fraunces:wght@300;400;700&display=swap");
 
 body {
@@ -20,9 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* --------------------------------------------------
-   BANNER
--------------------------------------------------- */
 .banner {
     text-align: center;
     padding: 40px 0;
@@ -53,9 +47,7 @@ html {
     border-bottom-color: #333;
 }
 
-/* --------------------------------------------------
-   ALBUM GRID
--------------------------------------------------- */
+
 .albums { 
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
@@ -96,9 +88,7 @@ html {
     overflow-wrap: anywhere;
 }
 
-/* --------------------------------------------------
-   GALLERY GRID
--------------------------------------------------- */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -134,29 +124,26 @@ html {
     padding: 0 10px;
 }
 
-/* --------------------------------------------------
-   BACK BUTTON
--------------------------------------------------- */
 .back-button { 
-    display: block;
-    margin: 20px 40px; 
-    padding: 10px 20px; 
-    font-size: 1.2rem; 
-    background: rgba(255, 255, 255, 0.224); 
-    color: black; 
-    border: none; 
-    cursor: pointer; 
-    font-family: "Fraunces", serif; 
+   display: block; /* lets us control spacing cleanly */ 
+   padding-left: 10px;
+   padding-bottom: 10px;
+   margin: 30px 2; /* space above and below, no centering */ 
+   margin-left: 40px;
+   font-family: "Great Vibes", cursive; 
+   font-size: 1.8rem; 
+   text-decoration: none; color: black; 
+   border-bottom: 1px solid transparent; 
+   padding-bottom: 2px; 
+   transition: 0.3s ease;
 }
 
 .back-button:hover { 
-    background: #333; 
-    color: white;
+   color: #333;
+    border-bottom-color: #333;
 }
 
-/* --------------------------------------------------
-   ABOUT PAGE
--------------------------------------------------- */
+
 .about-section {
     max-width: 900px;
     margin: 80px auto;
@@ -187,9 +174,6 @@ html {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* --------------------------------------------------
-   RESPONSIVE
--------------------------------------------------- */
 @media (max-width: 900px) {
     .albums {
         grid-template-columns: 1fr;
