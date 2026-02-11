@@ -9,7 +9,7 @@ Most of my photos are taken on a Sony Alpha a6000, with a few captured on my iPh
 
 I’m an outdoor enthusiast who loves an adventure, but I’ll admit one‑day trips are my favorite because I’m actually a bit of a homebody. I’m a natural introvert: a little shy, somewhat private, and occasionally socially awkward. Photography has become the perfect way for me to express myself and connect with people without feeling overwhelmed. It lets me hide behind the lens while still being part of the moment.
 
-I hope you enjoy my work. Feel free to reach out if you have questions or just want to chat about photography!
+I hope you enjoy my work. Feel free to reach out if you have questions or just want to chat about photography at my email kage@kagewolffoto.com!
       </p>
 
       <div className="about-photos">
