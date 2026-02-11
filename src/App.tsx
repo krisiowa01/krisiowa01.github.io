@@ -33,17 +33,34 @@ export default function App() {
     <>
       <Banner onAboutClick={handleShowAbout} />
 
+      {/* Home view */}
       {!selectedAlbum && !showAbout && (
-       <AlbumList albums={albums.albums} onSelect={handleSelectAlbum} />
+        <AlbumList albums={albums.albums} onSelect={handleSelectAlbum} />
       )}
 
+      {/* Album view with TOP + BOTTOM back buttons */}
       {selectedAlbum && !showAbout && (
-       <Gallery photos={albums.albums.find(a => a.id === selectedAlbum)?.photos || []} />
+        <>
+          <BackButton onClick={handleBack} />   {/* TOP */}
+
+          <Gallery
+            photos={
+              albums.albums.find(a => a.id === selectedAlbum)?.photos || []
+            }
+          />
+
+          <BackButton onClick={handleBack} />   {/* BOTTOM */}
+        </>
       )}
 
-      {showAbout && <About />}
-
-      {(selectedAlbum || showAbout) && <BackButton onClick={handleBack} />}
+      {/* About view with TOP + BOTTOM back buttons */}
+      {showAbout && (
+        <>
+          <BackButton onClick={handleBack} />   {/* TOP */}
+          <About />
+          <BackButton onClick={handleBack} />   {/* BOTTOM */}
+        </>
+      )}
     </>
   );
 }
