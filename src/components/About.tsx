@@ -53,7 +53,7 @@ If you ever want to talk photography or have questions, you can reach me at kage
         </figure>
 
         <figure>
-          <img src="/images/about/IMG_0388.webp" alt="Nature" className="nature-pic" />
+          <img src="/images/about/DSC03377.webp" alt="Nature" className="nature-pic" />
           <figcaption className="gallery-caption"></figcaption>
         </figure>
       </div>
