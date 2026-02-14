@@ -11,7 +11,7 @@ export default function Banner({ onAboutClick }: BannerProps) {
       <p>A Personal Journey Through Time and Space</p>
 
       <button className="about-link" onClick={onAboutClick}>
-        About Me
+        Why Photos?
       </button>
     </div>
   );
