@@ -124,6 +124,14 @@ html {
     padding: 0 10px;
 }
 
+#philosophy {
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: 40px 0;
+}   
+
 .back-button { 
    display: block; /* lets us control spacing cleanly */ 
    padding-left: 10px;
