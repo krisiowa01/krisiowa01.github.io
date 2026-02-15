@@ -1,6 +1,7 @@
 export interface Photo {
   src: string;
   caption: string;
+  captionClass?: string;
 }
 
 export interface Album {
