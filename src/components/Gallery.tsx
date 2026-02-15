@@ -1,6 +1,7 @@
 interface Photo {
   src: string;
   caption: string;
+  captionClass?: string;
 }
 
 interface GalleryProps {
@@ -15,7 +16,7 @@ export default function Gallery({ photos }: GalleryProps) {
         return (
           <div className="gallery-item" key={index}>
             <img src={srcPath} alt={photo.caption} className="journal-image" />
-            <div className="gallery-caption">{photo.caption}</div>
+            <div className={`gallery-caption ${photo.captionClass || ""}`}> {photo.caption} </div>
           </div>
         );
       })}
