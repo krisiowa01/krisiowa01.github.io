@@ -16,16 +16,23 @@ export default function Banner({ onAboutClick }: BannerProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % sliderImages.length);
-    }, 5000); // change every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div
-      className="banner slider-banner"
-      style={{ backgroundImage: `url(${sliderImages[index]})` }}
-    >
+    <div className="banner slider-banner">
+      <div className="fade-wrapper">
+        {sliderImages.map((src, i) => (
+          <div
+            key={i}
+            className={`fade-slide ${i === index ? "active" : ""}`}
+            style={{ backgroundImage: `url(${src})` }}
+          />
+        ))}
+      </div>
+
       <h1 className="kage-font">KageWolffoto</h1>
       <p>A Personal Journey Through Time and Space</p>
 
