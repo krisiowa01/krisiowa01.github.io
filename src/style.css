@@ -47,13 +47,43 @@ html {
     margin: 0;
 }
 
+.slider-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+  height: 60vh; /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Dark overlay for readability */
+.slider-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.slider-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+
 .about-link {
     display: inline-block;
     margin-top: 10px;
     font-family: "Great Vibes", cursive;
     font-size: 1.8rem;
     text-decoration: none;
-    color: black;
+    color: rgb(19, 19, 19);
     border-bottom: 1px solid transparent;
     padding-bottom: 2px;
     transition: 0.3s ease;
