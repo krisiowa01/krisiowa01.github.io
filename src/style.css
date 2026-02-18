@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Fraunces:wght@300;400;700&display=swap");
 
- /* body {
-    font-family: "Fraunces", serif;
-    background: #f4f1e8;
-    margin: 0;
-    padding: 0;
-    color: #222;
-} */
-
- body {
+body {
     font-family: "Fraunces", serif;
     font-size: 1.5rem;
     color: #555;
@@ -27,8 +19,7 @@ body .quote {
 p {
     font-family: "Fraunces", serif;
     line-height: 1.6;
-} 
- 
+}
 
 html {
     scroll-behavior: smooth;
@@ -53,7 +44,7 @@ html {
   background-repeat: no-repeat;
   transition: background-image 1s ease-in-out;
   position: relative;
-  height: 60vh; /* adjust as needed */
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +53,6 @@ html {
   color: white;
 }
 
-/* Dark overlay for readability */
 .slider-banner::before {
   content: "";
   position: absolute;
@@ -76,7 +66,7 @@ html {
   z-index: 1;
 }
 
-
+/* UPDATED: fully transparent, text-only link */
 .about-link {
     display: inline-block;
     margin-top: 10px;
@@ -84,8 +74,12 @@ html {
     font-size: 1.8rem;
     text-decoration: none;
     color: rgb(19, 19, 19);
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
     border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
     transition: 0.3s ease;
 }
 
@@ -94,11 +88,10 @@ html {
     border-bottom-color: #333;
 }
 
-
-.albums { 
-    display: grid; 
+.albums {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem; 
+    gap: 2.5rem;
     padding: 2rem 3rem;
 }
 
@@ -112,11 +105,11 @@ html {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.album img { 
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    object-fit: cover; 
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
     border-radius: 4px;
 }
 
@@ -143,7 +136,7 @@ html {
 
 .gallery img:hover {
     transform: scale(1.03);
-} 
+}
 
 #philosophy {
     font-family: "Great Vibes", cursive;
@@ -151,35 +144,30 @@ html {
     color: black;
     text-align: center;
     margin: 40px 0;
-}   
+}
 
-#philosophy {
-    font-family: "Great Vibes", cursive;
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-    margin: 40px 0;
-}   
-
-.back-button { 
-   display: block; /* lets us control spacing cleanly */ 
-   padding-left: 10px;
-   padding-bottom: 10px;
-   margin: 30px 2; /* space above and below, no centering */ 
+/* UPDATED: fully transparent, text-only back button */
+.back-button {
+   display: block;
+   margin: 30px 2;
    margin-left: 40px;
-   font-family: "Great Vibes", cursive; 
-   font-size: 1.8rem; 
-   text-decoration: none; color: black; 
-   border-bottom: 1px solid transparent; 
-   padding-bottom: 2px; 
+   font-family: "Great Vibes", cursive;
+   font-size: 1.8rem;
+   text-decoration: none;
+   color: black;
+   background: none;
+   border: none;
+   outline: none;
+   padding: 0;
+   cursor: pointer;
+   border-bottom: 1px solid transparent;
    transition: 0.3s ease;
 }
 
-.back-button:hover { 
+.back-button:hover {
    color: #333;
-    border-bottom-color: #333;
+   border-bottom-color: #333;
 }
-
 
 .about-section {
     max-width: 900px;
