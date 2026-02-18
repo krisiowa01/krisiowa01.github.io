@@ -66,6 +66,27 @@ html {
   z-index: 1;
 }
 
+.fade-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.fade-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-slide.active {
+  opacity: 1;
+}
+
+
 /* UPDATED: fully transparent, text-only link */
 .about-link {
     display: inline-block;
