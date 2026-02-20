@@ -26,7 +26,7 @@
         { "src": "images/iowa/DSC03341.webp", "caption": "Now that's a welcome sign! It's never goodbye, it's always see you later" },
         { "src": "images/iowa/IMG_0720.webp", "caption": "My dad planted this natural privacy fence and now it carefully collects each snow flake like precious pieces of time." },
         { "src": "images/iowa/IMG_5347.webp", "caption": "Lake MacBride - on a blanky with my baby" },
-        { "src": "images/iowa/IMG_5428.webp", "caption": "This trail and I are close companions. Over the years, it's seen me smiling from ear to ear and it's seen me crying my eyes out. When I made Varsity Tennis, I walked this trail and could not stop smiling. I had never fought so viciously for something I wanted before. I battled for my spot and I won. I remember crying my eyes out until the tears stopped forming after my High School boyfriend of four years dumbed me. He wanted to explore other options and I thought we were going to marry. Ha Ha. Oh boy. " }
+        { "src": "images/iowa/IMG_5428.webp", "caption": "This trail and I are close companions. Over the years, it's seen me smiling from ear to ear and it's seen me crying my eyes out. When I made Varsity Tennis, I walked this trail and could not stop smiling. I had never fought so viciously for something I wanted before. I battled for my spot and I won. I remember crying my eyes out until the tears stopped forming after my High School boyfriend of four years dumped me. He wanted to explore other options and I thought we were going to marry. Ha Ha. Oh boy. " }
       ]
     },
     {
@@ -131,12 +131,12 @@
     {
       "id": "travel",
       "title": "Travel",
-      "description": "Travel has always been a source of inspiration and growth for me. It pushes me beyond my comfort zone, introduces me to new cultures, and lets me see the world through fresh perspectives. These photos capture the spirit of those journeys from breathtaking landscapes to vibrant cityscape and all the small moments of awe that come with exploring somewhere new. My love for travel started with my very first trip as a teenage when my dad took me to Florida for Christmas. Instead of bundling up and navigating snow and freezing temperatures we spent the holiday on a warm beach. One memory we still laugh about is visiting a zoo. I had just started learning sign language and proudly signed “hello” to a chimp. When it raised its hand as if to wave back my dad forever joking the girl that talks to chimps. That trip sparked something in me. From that moment on I knew travel was something I wanted more of in my life. It has continued to bring me joy perspective and inspiration ever since.",
+      "description": "Travel has always been a source of inspiration and growth for me. It pushes me beyond my comfort zone, introduces me to new cultures, and lets me see the world through fresh perspectives. These photos capture the spirit of those journeys from breathtaking landscapes to vibrant cityscape and all the small moments of awe that come with exploring somewhere new. My love for travel started with my very first trip as a teenager when my dad took me to Florida for Christmas. Instead of bundling up and navigating snow and freezing temperatures we spent the holiday on a warm beach. One memory we still laugh about is visiting a zoo. I had just started learning sign language and proudly signed “hello” to a chimp. When it raised its hand as if to wave back my dad forever joking the girl that talks to chimps. That trip sparked something in me. From that moment on I knew travel was something I wanted more of in my life. It has continued to bring me joy, perspective and inspiration ever since.",
       "cover": "images/travel/IMG_3370.webp",
       "photos": [
         { "src": "images/travel/DSC02709.webp", "caption": "Walking around a beautiful botanical garden in Naples, FL. " },
 { "src": "images/travel/DSC02710.webp", "caption": "Flower trees or fruit trees? I love them both so much! " },
-{ "src": "images/travel/DSC02714.webp", "caption": "The goal is grow old with someone. To share a lifetime of memories and hold their hand the entire time." },
+{ "src": "images/travel/DSC02714.webp", "caption":"Time seems to be fleeting from us and the lifetime we thought we would have, feels like it's slipping through our fingers. All the things I wish I could say to you... -Kage the Poet" , "captionClass":"quote" },
 { "src": "images/travel/DSC02717.webp", "caption": "Carefully approach any body of water in Florida and be respectful of the wildlife." },
 { "src": "images/travel/DSC02725.webp", "caption": "Bonita Beach, collecting seashells and watching the waves." },
 { "src": "images/travel/DSC02730.webp", "caption": "Beach bums!" },
