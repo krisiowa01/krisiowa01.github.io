@@ -86,7 +86,7 @@ export default function About() {
             images={[
               "/images/about/DSC02914.webp",
               "/images/about/DSC03377.webp",
-              "/images/about/IMG_6072.webp"
+              "/images/about/IMG_6072_jpg.webp"
             ]}
           />
           <figcaption className="gallery-caption"></figcaption>
