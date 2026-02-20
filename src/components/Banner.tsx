@@ -7,7 +7,8 @@ interface BannerProps {
 const sliderImages = [
   "/images/banner/DSC02493.webp",
   "/images/banner/DSC02795.webp",
-  "/images/banner/DSC03693.webp"
+  "/images/banner/DSC03693.webp",
+  "/images/banner/IMG_9884.webp"
 ];
 
 export default function Banner({ onAboutClick }: BannerProps) {
