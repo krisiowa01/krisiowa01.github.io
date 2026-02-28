@@ -4,4 +4,5 @@ variable "newrelic_account_id" {
 
 variable "newrelic_api_key" {
   type = string
+  sensitive = true
 }
