@@ -84,9 +84,11 @@ export default function About() {
         <figure>
           <AboutPhotoSlider
             images={[
-              "/images/about/DSC02914.webp",
-              "/images/about/DSC03377.webp",
-              "/images/about/IMG_6072_jpg.webp"
+              "/images/about/IMG_5138.webp",
+              "/images/about/IMG_5990.webp",
+              "/images/about/IMG_6072_jpg.webp",
+              "/images/about/IMG_6106.webp",
+              "/images/about/IMG_6470.webp"
             ]}
           />
           <figcaption className="gallery-caption"></figcaption>
