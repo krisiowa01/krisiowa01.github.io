@@ -3,7 +3,7 @@ import type { Album } from "../types/Albums";
 
 interface AlbumListProps {
   albums: Album[];
-  onSelect: (albumName: string) => void;
+  onSelect: (albumId: string) => void;
 }
 
 export default function AlbumList({ albums, onSelect }: AlbumListProps) {
