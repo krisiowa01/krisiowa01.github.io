@@ -6,16 +6,28 @@ import About from "./components/About";
 import BackButton from "./components/BackButton";
 import "./style.css";
 import albumsData from "./data/albums.json";
-import { Albums } from "./types/Albums";
+import { Albums, Album } from "./types/Albums";
 
 const albums: Albums = albumsData as Albums;
+
+function findAlbumById(albums: Album[], albumId: string): Album | undefined {
+  for (const album of albums) {
+    if (album.id === albumId) return album;
+    if (album.albums) {
+      const nested = findAlbumById(album.albums, albumId);
+      if (nested) return nested;
+    }
+  }
+
+  return undefined;
+}
 
 export default function App() {
   const [selectedAlbum, setSelectedAlbum] = useState<string | null>(null);
   const [showAbout, setShowAbout] = useState(false);
 
-  const handleSelectAlbum = (albumName: string) => {
-    setSelectedAlbum(albumName);
+  const handleSelectAlbum = (albumId: string) => {
+    setSelectedAlbum(albumId);
     setShowAbout(false);
   };
 
@@ -28,6 +40,9 @@ export default function App() {
     setSelectedAlbum(null);
     setShowAbout(false);
   };
+
+  const activeAlbum = selectedAlbum ? findAlbumById(albums.albums, selectedAlbum) : undefined;
+  const nestedAlbums = activeAlbum?.albums ?? [];
 
   return (
     <>
@@ -43,11 +58,13 @@ export default function App() {
         <>
           <BackButton onClick={handleBack} />   {/* TOP */}
 
-          <Gallery
-            photos={
-              albums.albums.find(a => a.id === selectedAlbum)?.photos || []
-            }
-          />
+          <Gallery photos={activeAlbum?.photos || []} />
+
+          {nestedAlbums.length > 0 && (
+            <div style={{ marginTop: "2rem" }}>
+              <AlbumList albums={nestedAlbums} onSelect={handleSelectAlbum} />
+            </div>
+          )}
 
           <BackButton onClick={handleBack} />   {/* BOTTOM */}
         </>
